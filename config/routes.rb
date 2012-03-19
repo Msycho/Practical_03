@@ -1,4 +1,8 @@
 Practical3::Application.routes.draw do
+  resources :cars
+
+  get "car/new"
+
   get "welcome/index"
 
   # The priority is based upon order of creation:
