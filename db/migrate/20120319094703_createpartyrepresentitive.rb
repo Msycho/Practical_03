@@ -1,6 +1,6 @@
 class Createpartyrepresentitive < ActiveRecord::Migration
 def up
-	  create_table :partyrepresentives do |representitive|
+	  create_table :partyrepresentive do |representitive|
       representitive.string  :representivestudent
 	  representitive.string	  :partyofrepresentive	
       representitive.timestamps
@@ -8,6 +8,6 @@ def up
   end
   
   def down
-	  drop_table 	:partyrepresentives
+	  drop_table 	:partyrepresentive
  end
 end
