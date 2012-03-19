@@ -7,6 +7,6 @@ class CreateCampus < ActiveRecord::Migration
   end
   
   def down
-	  drop_table 	: campuses
+	  drop_table 	:campuses
  end
 end
