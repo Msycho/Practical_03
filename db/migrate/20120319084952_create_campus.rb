@@ -1,12 +1,12 @@
 class CreateCampus < ActiveRecord::Migration
   def up
-	 create_table :campus do |campus|
+	 create_table :ujcampus do |campus|
       campus.string  :campusname
       campus.timestamps
     end
   end
   
   def down
-	  drop_table :campus
+	  drop_table :ujcampus
   end
 end
