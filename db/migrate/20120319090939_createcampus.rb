@@ -1,9 +1,9 @@
 class Createcampus < ActiveRecord::Migration
   def up
-    create_table :campuses do |campuses|
+    create_table :campuses do |campus|
 
-	  campuses.string  	:campusname
-	  campuses.timestamps
+	  campus.string  	:campusname
+	  campus.timestamps
     end
  end
  
