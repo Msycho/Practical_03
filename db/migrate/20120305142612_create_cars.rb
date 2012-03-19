@@ -1,7 +1,7 @@
 class CreateCars < ActiveRecord::Migration
-  def change
+  def up
     create_table :cars do |t|
-      t.sting :nammanufacture
+      t.string :nammanufacture
       t.string :type
       t.string :registrationnumber
       t.integer :dimensions
@@ -10,4 +10,7 @@ class CreateCars < ActiveRecord::Migration
       t.timestamps
     end
   end
+  def down
+	  drop_table 	: cars
+ end
 end
