@@ -1,9 +1,9 @@
 class Addcolumntostudent < ActiveRecord::Migration
   def up
-	add_column 		:students, year, :string 
+	add_column 		:students, :year, :string 
   end
 
   def down
-	remove_column 	:students, year
+	remove_column 	:students, :year
   end
 end
