@@ -1,8 +1,8 @@
 class CreateRegistrations < ActiveRecord::Migration
   def up
     create_table :registrations do |registration|
-	  registration.student :student
-	  registration.campus  :campus
+	  registration.string :student
+	  registration.string  :campus
       registration.timestamps
     end
   end
